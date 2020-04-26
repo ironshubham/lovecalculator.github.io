@@ -58,12 +58,22 @@
 
 <script type="text/javascript">
 	function checkloveper(){
+
+	var name = document.getElementById("name").value;
+	var lname = document.getElementById("lname").value;
+
+	if(name == ""  ||  lname =="")
+	{
+		alert("hiii");
+	}
+	else{
       var lovedata = Math.random() * 100;
       lovedata = Math.floor(lovedata);
-      document.getElementById('lovedata').value = lovedata
+      document.getElementById('lovevalue').value = lovedata + "%";
 
-
+}
 	}
+
 </script>
 </body>
 </html>
