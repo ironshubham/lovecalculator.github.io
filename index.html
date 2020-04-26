@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"
+	 href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	 <style type="text/css">
+	 	body{
+	 		background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,
+	 			0.3)), url('https://images.pexels.com/photos/1028725/pexels-photo-1028725.jpeg');
+	 		background-repeat: no-repeat;
+	 		background-size: cover;
+	 		background-position: center;
+	 		width: 100%;
+	 		height: 100vh;
+	 		position: relative;
+	 	}
+
+	 	header{
+	 		width: 100%;
+	 		position: absolute;
+	 		top: 50%;
+	 		left:50%;
+	 		transform: translate(-50%, -50%);
+	 	}
+	 </style>
+</head>
+<body>
+<header>
+	<div class="card w-50 m-auto text-center">
+  <div class="card-header bg-danger text-white">LOVE CALCULATOR</div>
+  <div class="card-body">
+  	<form class="form-inline w-75 m-auto text-center">
+  		<div class="form-group">
+  			<input type="text" name="" class="form-control text-center" placeholder="Your Name" >
+  		</div>
+  		<div>  <span class="pl-4 pr-4"> + </span></div>
+  		  		<div class="form-group">
+  			<input type="text" name="" class="form-control text-center" placeholder="LOVE Name" >
+  		</div>	
+  	</form>
+  	<br>
+  	<div class=""w-75 m-auto>
+  		<button class="btn btn-success w-50" onclick="checkloveper()">
+  		Check </button>
+  	</div>
+  	<br>
+  	<div>
+  		<input type="text" name="" id="lovevalue" class="form-control 
+  		text-center w-25 m-auto" placeholder="LOVE PERCENTAGE">
+  	</div>
+
+  </div>
+  <div class="card-footer">GOD BLESS YOUR RELATIONSHIP</div>
+</div>
+</header>
+
+
+<script type="text/javascript">
+	function checkloveper(){
+      var lovedata = Math.random() * 100;
+      lovedata = Math.floor(lovedata);
+      document.getElementById('lovedata').value = lovedata
+
+
+	}
+</script>
+</body>
+</html>
